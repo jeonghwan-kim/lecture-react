@@ -7,11 +7,18 @@ export default class HistoryListView extends KeywordListView {
   }
 
   bindEvents() {
-    // TODO
+    delegate(this.element, "click", "button.btn-remove", (event) =>
+      this.handleClickRemoveButton(event)
+    );
+
+    super.bindEvents();
   }
 
   handleClickRemoveButton(event) {
-    // TODO
+    event.stopPropagation();
+
+    const value = event.target.parentElement.dataset.keyword;
+    this.emit("@remove", { value });
   }
 }
 
