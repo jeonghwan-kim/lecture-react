@@ -20,6 +20,7 @@ export default class TabView extends View {
     super(qs("#tab-view"));
 
     this.template = new Template();
+    // TODO
   }
 
   show(selectedTab) {

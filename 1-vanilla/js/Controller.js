@@ -18,6 +18,8 @@ export default class Controller {
     this.searchFormView
       .on("@submit", (event) => this.search(event.detail.value))
       .on("@reset", () => this.reset());
+
+    // TODO
   }
 
   search(keyword) {
