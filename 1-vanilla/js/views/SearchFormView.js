@@ -22,6 +22,7 @@ export default class SearchFormView extends View {
 
   bindEvents() {
     on(this.inputElement, "keyup", () => this.handleKeyup());
+    // TODO
   }
 
   handleKeyup() {
