@@ -8,6 +8,16 @@ export default class Controller {
 
     this.searchFormView = searchFormView;
 
-    // TODO
+    this.subscribeViewEvents();
+  }
+
+  subscribeViewEvents() {
+    this.searchFormView.on("@submit", (event) =>
+      this.search(event.detail.value)
+    );
+  }
+
+  search(searchKeyword) {
+    console.log(tag, "search", searchKeyword);
   }
 }
