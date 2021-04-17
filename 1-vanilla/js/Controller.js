@@ -9,6 +9,7 @@ export default class Controller {
     this.searchFormView = searchFormView;
     this.searchResultView = searchResultView;
     this.tabView = tabView;
+    // TODO
 
     this.subscribeViewEvents();
     this.render();
@@ -50,11 +51,15 @@ export default class Controller {
     }
 
     this.tabView.show(this.store.selectedTab);
+    // TODO
+
     this.searchResultView.hide();
   }
 
   renderSearchResult() {
     this.tabView.hide();
+    // TODO
+
     this.searchResultView.show(this.store.searchResult);
   }
 }

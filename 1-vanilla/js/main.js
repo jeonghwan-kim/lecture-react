@@ -18,6 +18,7 @@ function main() {
     searchFormView: new SearchFormView(),
     searchResultView: new SearchResultView(),
     tabView: new TabView(),
+    //
   };
 
   new Controller(store, views);
