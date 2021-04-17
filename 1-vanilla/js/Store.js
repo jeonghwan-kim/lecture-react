@@ -7,5 +7,7 @@ export default class Store {
     if (!storage) throw "no storage";
 
     this.storage = storage;
+
+    // TODO
   }
 }

@@ -7,6 +7,7 @@ export default class Controller {
     this.store = store;
 
     this.searchFormView = searchFormView;
+    // TODO
 
     this.subscribeViewEvents();
   }
@@ -19,6 +20,7 @@ export default class Controller {
 
   search(searchKeyword) {
     console.log(tag, "search", searchKeyword);
+    // TODO
   }
 
   reset() {

@@ -14,6 +14,7 @@ function main() {
 
   const views = {
     searchFormView: new SearchFormView(),
+    // TODO
   };
 
   new Controller(store, views);
