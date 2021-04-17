@@ -10,6 +10,7 @@ export default class Store {
 
     this.searchKeyword = "";
     this.searchResult = [];
+    // TODO
   }
 
   search(keyword) {

@@ -24,6 +24,7 @@ export default class TabView extends View {
 
   show() {
     this.element.innerHTML = this.template.getTabList();
+    // TODO
 
     super.show();
   }

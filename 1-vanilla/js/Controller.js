@@ -40,7 +40,7 @@ export default class Controller {
       return this.renderSearchResult();
     }
 
-    this.tabView.show();
+    this.tabView.show(); // TODO
     this.searchResultView.hide();
   }
 
