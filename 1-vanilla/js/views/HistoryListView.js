@@ -5,6 +5,14 @@ export default class HistoryListView extends KeywordListView {
   constructor() {
     super(qs("#history-list-view"), new Template());
   }
+
+  bindEvents() {
+    // TODO
+  }
+
+  handleClickRemoveButton(event) {
+    // TODO
+  }
 }
 
 class Template {

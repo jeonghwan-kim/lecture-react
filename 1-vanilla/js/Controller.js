@@ -41,6 +41,7 @@ export default class Controller {
     this.historyListView.on("@click", (event) =>
       this.search(event.detail.value)
     );
+    // TODO
   }
 
   search(keyword) {
@@ -63,6 +64,10 @@ export default class Controller {
 
     this.store.selectedTab = tab;
     this.render();
+  }
+
+  removeHistory(keyword) {
+    // TODO
   }
 
   render() {
