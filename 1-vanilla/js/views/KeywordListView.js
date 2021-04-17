@@ -4,13 +4,12 @@ import View from "./View.js";
 const tag = "[KeywrodListView]";
 
 export default class KeywordListView extends View {
-  // TODO
-  constructor() {
+  constructor(element = qs("#keyword-list-view"), template = new Template()) {
     console.log(tag, "constructor");
 
-    super(qs("#keyword-list-view"));
+    super(element);
 
-    this.template = new Template();
+    this.template = template;
     this.bindEvents();
   }
 
