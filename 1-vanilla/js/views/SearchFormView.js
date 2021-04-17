@@ -23,14 +23,16 @@ export default class SearchFormView extends View {
   bindEvents() {
     on(this.inputElement, "keyup", () => this.handleKeyup());
     this.on("submit", (event) => this.handleSubmit(event));
-    // TODO
+    this.on("reset", () => this.handleReset());
   }
 
   handleKeyup() {
     const { value } = this.inputElement;
     this.showResetButton(value.length > 0);
 
-    // TODO
+    if (value.length <= 0) {
+      this.handleReset();
+    }
   }
 
   handleSubmit(event) {
@@ -38,5 +40,9 @@ export default class SearchFormView extends View {
 
     const { value } = this.inputElement;
     this.emit("@submit", { value });
+  }
+
+  handleReset() {
+    this.emit("@reset");
   }
 }
