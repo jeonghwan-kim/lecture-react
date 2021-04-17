@@ -8,6 +8,7 @@ export default class Controller {
 
     this.searchFormView = searchFormView;
     this.searchResultView = searchResultView;
+    // TODO
 
     this.subscribeViewEvents();
   }
@@ -35,10 +36,12 @@ export default class Controller {
 
   render() {
     if (this.store.searchKeyword.length > 0) {
+      // TODO
       this.searchResultView.show(this.store.searchResult);
       return;
     }
 
+    // TODO
     this.searchResultView.hide();
   }
 }
