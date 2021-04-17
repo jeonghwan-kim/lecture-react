@@ -72,6 +72,7 @@ export default class Controller {
   }
 
   renderSearchResult() {
+    // TODO
     this.tabView.hide();
     this.keywordListView.hide();
 

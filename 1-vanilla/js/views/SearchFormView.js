@@ -45,4 +45,8 @@ export default class SearchFormView extends View {
   handleReset() {
     this.emit("@reset");
   }
+
+  show() {
+    // TODO
+  }
 }
