@@ -27,6 +27,7 @@ export default class Controller {
 
   reset() {
     console.log(tag, "reset");
+    // TODO
   }
 
   render() {
