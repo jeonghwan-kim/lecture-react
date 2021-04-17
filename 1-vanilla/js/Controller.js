@@ -19,7 +19,7 @@ export default class Controller {
       .on("@submit", (event) => this.search(event.detail.value))
       .on("@reset", () => this.reset());
 
-    // TODO
+    this.tabView.on("@change", (event) => this.changeTab(event.detail.value));
   }
 
   search(keyword) {
@@ -34,6 +34,13 @@ export default class Controller {
 
     this.store.searchKeyword = "";
     this.store.searchResult = [];
+    this.render();
+  }
+
+  changeTab(tab) {
+    console.log(tag, "changeTab", tab);
+
+    this.store.selectedTab = tab;
     this.render();
   }
 
