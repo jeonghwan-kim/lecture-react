@@ -12,6 +12,7 @@ export default class SearchFormView extends View {
     this.resetElement = qs("[type=reset]", this.element);
 
     this.showResetButton(false);
+    // TODO
   }
 
   showResetButton(visible = true) {
