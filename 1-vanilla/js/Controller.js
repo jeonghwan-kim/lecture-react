@@ -26,6 +26,8 @@ export default class Controller {
       .on("@reset", () => this.reset());
 
     this.tabView.on("@change", (event) => this.changeTab(event.detail.value));
+
+    // TODO
   }
 
   search(keyword) {

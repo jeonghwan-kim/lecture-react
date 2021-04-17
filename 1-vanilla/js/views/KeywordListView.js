@@ -10,6 +10,15 @@ export default class KeywordListView extends View {
     super(qs("#keyword-list-view"));
 
     this.template = new Template();
+    // TODO
+  }
+
+  bindEvents() {
+    // TODO
+  }
+
+  handleClick() {
+    // TODO
   }
 
   show(data = []) {
