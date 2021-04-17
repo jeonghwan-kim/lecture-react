@@ -20,6 +20,7 @@ function main() {
     searchResultView: new SearchResultView(),
     tabView: new TabView(),
     keywordListView: new KeywordListView(),
+    // TODO
   };
 
   new Controller(store, views);

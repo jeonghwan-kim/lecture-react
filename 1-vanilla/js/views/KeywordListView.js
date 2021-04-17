@@ -4,6 +4,7 @@ import View from "./View.js";
 const tag = "[KeywrodListView]";
 
 export default class KeywordListView extends View {
+  // TODO
   constructor() {
     console.log(tag, "constructor");
 
@@ -18,7 +19,7 @@ export default class KeywordListView extends View {
   }
 
   handleClick(event) {
-    console.log(tag, "handleClick", event.target.keyword);
+    console.log(tag, "handleClick", event.target.dataset.keyword);
 
     const value = event.target.dataset.keyword;
     this.emit("@click", { value });

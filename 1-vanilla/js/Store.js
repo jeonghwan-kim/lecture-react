@@ -25,4 +25,8 @@ export default class Store {
   getKeywordList() {
     return this.storage.keywordData;
   }
+
+  getHistoryList() {
+    // TODO
+  }
 }

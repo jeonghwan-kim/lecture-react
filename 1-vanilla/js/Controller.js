@@ -15,6 +15,7 @@ export default class Controller {
     this.searchResultView = searchResultView;
     this.tabView = tabView;
     this.keywordListView = keywordListView;
+    // TODO
 
     this.subscribeViewEvents();
     this.render();
@@ -62,8 +63,10 @@ export default class Controller {
     this.tabView.show(this.store.selectedTab);
     if (this.store.selectedTab === TabType.KEYWORD) {
       this.keywordListView.show(this.store.getKeywordList());
+      // TODO
     } else if (this.store.selectedTab === TabType.HISTORY) {
       this.keywordListView.hide();
+      // TODO
     } else {
       throw "사용할 수 없는 탭입니다.";
     }
@@ -75,6 +78,7 @@ export default class Controller {
     this.searchFormView.show(this.store.searchKeyword);
     this.tabView.hide();
     this.keywordListView.hide();
+    // TODO
 
     this.searchResultView.show(this.store.searchResult);
   }
