@@ -1,8 +1,15 @@
 const element = (
-  <header>
-    <h2 className="container">검색</h2>
-  </header>
-  // TODO
+  <>
+    <header>
+      <h2 className="container">검색</h2>
+    </header>
+    <div className="container">
+      <form>
+        <input type="text" placeholder="검색어를 입력하세요" autoFocus />
+        <button type="reset" class="btn-reset"></button>
+      </form>
+    </div>
+  </>
 );
 
 ReactDOM.render(element, document.querySelector("#app"));
