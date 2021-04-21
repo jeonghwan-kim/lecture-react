@@ -18,7 +18,7 @@ class Store {
   }
 
   getKeywordList() {
-    // TODO
+    return this.storage.keywordData;
   }
 }
 
