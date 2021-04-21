@@ -13,7 +13,8 @@ class App extends React.Component {
   }
 
   handleReset() {
-    // TODO
+    console.log("TODO: handleResset");
+    this.setState({ searchKeyword: "" });
   }
 
   handleChangeInput(event) {
@@ -30,7 +31,7 @@ class App extends React.Component {
         <div className="container">
           <form
             onSubmit={(event) => this.handleSubmit(event)}
-            // TODO
+            onReset={() => this.handleReset()}
           >
             <input
               type="text"
