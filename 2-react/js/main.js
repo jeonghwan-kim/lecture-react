@@ -13,6 +13,10 @@ class App extends React.Component {
     console.log("TODO: handleSubmit", this.state.searchKeyword);
   }
 
+  search(searchKeyword) {
+    // TODO
+  }
+
   handleReset() {
     console.log("TODO: handleResset");
     this.setState({ searchKeyword: "" });
