@@ -13,8 +13,6 @@ class App extends React.Component {
   }
 
   render() {
-    // TODO
-
     return (
       <>
         <header>
@@ -29,8 +27,9 @@ class App extends React.Component {
               value={this.state.query}
               onChange={(event) => this.handleChangeInput(event)}
             />
-            {/* TODO */}
-            <button type="reset" className="btn-reset"></button>
+            {this.state.searchKeyword.length > 0 && (
+              <button type="reset" className="btn-reset"></button>
+            )}
           </form>
         </div>
       </>
