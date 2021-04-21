@@ -7,6 +7,10 @@ class App extends React.Component {
     };
   }
 
+  handleSubmit(event) {
+    // TODO
+  }
+
   handleChangeInput(event) {
     const searchKeyword = event.target.value;
     this.setState({ searchKeyword });
@@ -19,6 +23,7 @@ class App extends React.Component {
           <h2 className="container">검색</h2>
         </header>
         <div className="container">
+          {/* TODO */}
           <form>
             <input
               type="text"
