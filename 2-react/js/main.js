@@ -67,6 +67,10 @@ class App extends React.Component {
     this.setState({ searchKeyword });
   }
 
+  handleClickRemoveHistory() {
+    // TODO
+  }
+
   render() {
     const searchForm = (
       <form
@@ -117,6 +121,7 @@ class App extends React.Component {
           <li key={id} onClick={() => this.search(keyword)}>
             <span>{keyword}</span>
             <span className="date">{formatRelativeDate(date)}</span>
+            {/* TODO */}
             <button className="btn-remove" />
           </li>
         ))}
