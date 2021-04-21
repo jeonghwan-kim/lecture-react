@@ -63,7 +63,7 @@ class App extends React.Component {
           type="text"
           placeholder="검색어를 입력하세요"
           autoFocus
-          value={this.state.query}
+          value={this.state.searchKeyword}
           onChange={(event) => this.handleChangeInput(event)}
         />
         {this.state.searchKeyword.length > 0 && (
