@@ -23,7 +23,7 @@ class App extends React.Component {
               type="text"
               placeholder="검색어를 입력하세요"
               autoFocus
-              value={this.state.query}
+              value={this.state.searchKeyword}
               // TODO
             />
             <button type="reset" className="btn-reset"></button>
