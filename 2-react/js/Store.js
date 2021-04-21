@@ -12,9 +12,15 @@ class Store {
   }
 
   search(keyword) {
+    // TODO
+
     return this.storage.productData.filter((product) =>
       product.name.includes(keyword)
     );
+  }
+
+  addHistory() {
+    // TODO
   }
 
   getKeywordList() {

@@ -42,9 +42,12 @@ class App extends React.Component {
 
   search(searchKeyword) {
     const searchResult = store.search(searchKeyword);
+    // TODO
+
     this.setState({
       searchKeyword,
       searchResult,
+      // TODO
       submitted: true,
     });
   }
