@@ -1,3 +1,4 @@
+// TODO
 const element = (
   <>
     <header>
@@ -12,4 +13,5 @@ const element = (
   </>
 );
 
+// TODO
 ReactDOM.render(element, document.querySelector("#app"));
