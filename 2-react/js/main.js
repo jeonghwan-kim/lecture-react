@@ -75,6 +75,9 @@ class App extends React.Component {
         <div className="empty-box">검색 결과가 없습니다</div>
       );
 
+    // TODO
+    const tabs = null;
+
     return (
       <>
         <header>
@@ -82,7 +85,10 @@ class App extends React.Component {
         </header>
         <div className="container">
           {searchForm}
-          <div className="content">{this.state.submitted && searchResult}</div>
+          <div className="content">
+            {/* TODO */}
+            {this.state.submitted && searchResult}
+          </div>
         </div>
       </>
     );
