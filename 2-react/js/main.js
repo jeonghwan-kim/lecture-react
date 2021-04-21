@@ -25,12 +25,17 @@ class App extends React.Component {
   }
 
   handleReset() {
-    console.log("TODO: handleResset");
-    this.setState({ searchKeyword: "" });
+    this.setState({
+      searchKeyword: "",
+      // TODO
+    });
   }
 
   handleChangeInput(event) {
     const searchKeyword = event.target.value;
+
+    // TODO
+
     this.setState({ searchKeyword });
   }
 
