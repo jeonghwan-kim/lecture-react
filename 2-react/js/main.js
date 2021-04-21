@@ -1,3 +1,4 @@
+import { formatRelativeDate } from "./js/helpers.js";
 import store from "./js/Store.js";
 
 const TabType = {
@@ -20,13 +21,18 @@ class App extends React.Component {
       submitted: false,
       selectedTab: TabType.KEYWORD,
       keywordList: [],
-      // TODO
+      historyList: [],
     };
   }
 
   componentDidMount() {
     const keywordList = store.getKeywordList();
-    this.setState({ keywordList });
+    const historyList = store.getHistoryList();
+
+    this.setState({
+      keywordList,
+      historyList,
+    });
   }
 
   handleSubmit(event) {
@@ -105,8 +111,17 @@ class App extends React.Component {
       </ul>
     );
 
-    // TODO
-    const historyList = null;
+    const historyList = (
+      <ul className="list">
+        {this.state.historyList.map(({ id, keyword, date }) => (
+          <li key={id} onClick={() => this.search(keyword)}>
+            <span>{keyword}</span>
+            <span className="date">{formatRelativeDate(date)}</span>
+            <button className="btn-remove" />
+          </li>
+        ))}
+      </ul>
+    );
 
     const tabs = (
       <>
@@ -122,9 +137,7 @@ class App extends React.Component {
           ))}
         </ul>
         {this.state.selectedTab === TabType.KEYWORD && keywordList}
-        {this.state.selectedTab === TabType.HISTORY && (
-          <>{`TODO: 최근 검색어`}</>
-        )}
+        {this.state.selectedTab === TabType.HISTORY && historyList}
       </>
     );
 
