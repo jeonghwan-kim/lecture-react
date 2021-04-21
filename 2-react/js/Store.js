@@ -20,6 +20,10 @@ class Store {
   getKeywordList() {
     return this.storage.keywordData;
   }
+
+  getHistoryList() {
+    // TODO
+  }
 }
 
 const store = new Store(storage);

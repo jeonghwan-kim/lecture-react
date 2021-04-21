@@ -20,6 +20,7 @@ class App extends React.Component {
       submitted: false,
       selectedTab: TabType.KEYWORD,
       keywordList: [],
+      // TODO
     };
   }
 
@@ -103,6 +104,9 @@ class App extends React.Component {
         ))}
       </ul>
     );
+
+    // TODO
+    const historyList = null;
 
     const tabs = (
       <>
