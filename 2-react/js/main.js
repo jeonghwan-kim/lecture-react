@@ -18,6 +18,7 @@ class App extends React.Component {
       searchKeyword: "",
       searchResult: [],
       submitted: false,
+      // TODO
     };
   }
 
@@ -88,6 +89,7 @@ class App extends React.Component {
     const tabs = (
       <ul className="tabs">
         {Object.values(TabType).map((tabType) => (
+          // TODO
           <li key={tabType}>{TabLabel[tabType]}</li>
         ))}
       </ul>
