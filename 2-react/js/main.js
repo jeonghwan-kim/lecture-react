@@ -36,6 +36,7 @@ class App extends React.Component {
   search(searchKeyword) {
     const searchResult = store.search(searchKeyword);
     this.setState({
+      // TODO
       searchResult,
       submitted: true,
     });
@@ -95,6 +96,7 @@ class App extends React.Component {
     const keywordList = (
       <ul className="list">
         {this.state.keywordList.map(({ id, keyword }, index) => (
+          // TODO
           <li key={id}>
             <span className="number">{index + 1}</span>
             <span>{keyword}</span>
