@@ -8,7 +8,7 @@ class App extends React.Component {
         <div className="container">
           <form>
             <input type="text" placeholder="검색어를 입력하세요" autoFocus />
-            <button type="reset" class="btn-reset"></button>
+            <button type="reset" className="btn-reset"></button>
           </form>
         </div>
       </>
