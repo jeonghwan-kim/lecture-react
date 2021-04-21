@@ -19,7 +19,12 @@ class App extends React.Component {
       searchResult: [],
       submitted: false,
       selectedTab: TabType.KEYWORD,
+      // TODO
     };
+  }
+
+  componentDidMount() {
+    // TODO
   }
 
   handleSubmit(event) {
@@ -85,6 +90,9 @@ class App extends React.Component {
       ) : (
         <div className="empty-box">검색 결과가 없습니다</div>
       );
+
+    // TODO
+    const keywordList = null;
 
     const tabs = (
       <>
