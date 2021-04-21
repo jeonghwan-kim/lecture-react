@@ -7,6 +7,7 @@ class App extends React.Component {
     this.state = {
       searchKeyword: "",
       searchResult: [],
+      // TODO
     };
   }
 
@@ -17,7 +18,10 @@ class App extends React.Component {
 
   search(searchKeyword) {
     const searchResult = store.search(searchKeyword);
-    this.setState({ searchResult });
+    this.setState({
+      searchResult,
+      // TODO
+    });
   }
 
   handleReset() {
@@ -31,6 +35,7 @@ class App extends React.Component {
   }
 
   render() {
+    // TODO
     return (
       <>
         <header>
