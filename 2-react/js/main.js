@@ -7,6 +7,10 @@ class App extends React.Component {
     };
   }
 
+  handleChangeInput(event) {
+    // TODO
+  }
+
   render() {
     return (
       <>
@@ -20,8 +24,9 @@ class App extends React.Component {
               placeholder="검색어를 입력하세요"
               autoFocus
               value={this.state.query}
+              // TODO
             />
-            <button type="reset" class="btn-reset"></button>
+            <button type="reset" className="btn-reset"></button>
           </form>
         </div>
       </>
