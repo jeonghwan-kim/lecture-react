@@ -4,6 +4,7 @@ class App extends React.Component {
 
     this.state = {
       searchKeyword: "",
+      // TODO
     };
   }
 
@@ -44,6 +45,7 @@ class App extends React.Component {
               <button type="reset" className="btn-reset"></button>
             )}
           </form>
+          <div className="content">{/* TODO */}</div>
         </div>
       </>
     );
