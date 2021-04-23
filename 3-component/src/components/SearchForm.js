@@ -7,12 +7,22 @@ export default class SearchForm extends React.Component {
     this.state = { searchKeyword: "" };
   }
 
-  handleSubmit() {
-    // TODO
+  handleSubmit(event) {
+    event.preventDefault();
+    this.props.onSubmit(this.state.searchKeyword);
+  }
+
+  handleReset() {
+    this.props.onReset();
   }
 
   handleChangeInput(event) {
     const searchKeyword = event.target.value;
+
+    if (searchKeyword.length <= 0) {
+      return this.handleReset();
+    }
+
     this.setState({ searchKeyword });
   }
 
@@ -20,8 +30,10 @@ export default class SearchForm extends React.Component {
     const { searchKeyword } = this.state;
 
     return (
-      // TODO
-      <form>
+      <form
+        onSubmit={(event) => this.handleSubmit(event)}
+        onReset={() => this.handleReset()}
+      >
         <input
           type="text"
           placeholder="검색어를 입력하세요"

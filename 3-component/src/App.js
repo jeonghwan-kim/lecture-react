@@ -1,9 +1,14 @@
 import React from "react";
 import Header from "./components/Header.js";
+import SearchForm from "./components/SearchForm.js";
 
 export default class App extends React.Component {
-  search() {
-    // TODO
+  search(searchKeyword) {
+    console.log("TODO: search", searchKeyword);
+  }
+
+  handleReset() {
+    console.log("TODO: reset");
   }
 
   render() {
@@ -11,8 +16,10 @@ export default class App extends React.Component {
       <>
         <Header title="검색" />
         <div className="container">
-          {/* TODO */}
-          <SearchForm />
+          <SearchForm
+            onSubmit={(searchKeyword) => this.search(searchKeyword)}
+            onReset={() => this.handleReset()}
+          />
         </div>
       </>
     );
