@@ -12,6 +12,7 @@ export default class App extends React.Component {
       searchKeyword: "",
       searchResult: [],
       submitted: false,
+      // TODO
     };
   }
 
@@ -54,6 +55,7 @@ export default class App extends React.Component {
             onReset={() => this.handleReset()}
           />
           <div className="content">
+            {/* TODO */}
             {submitted && <SearchResult data={searchResult} />}
           </div>
         </div>
