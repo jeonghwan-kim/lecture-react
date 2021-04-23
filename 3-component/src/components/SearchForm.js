@@ -7,6 +7,10 @@ export default class SearchForm extends React.Component {
     this.state = { searchKeyword: "" };
   }
 
+  handleSubmit() {
+    // TODO
+  }
+
   handleChangeInput(event) {
     const searchKeyword = event.target.value;
     this.setState({ searchKeyword });
@@ -16,6 +20,7 @@ export default class SearchForm extends React.Component {
     const { searchKeyword } = this.state;
 
     return (
+      // TODO
       <form>
         <input
           type="text"
