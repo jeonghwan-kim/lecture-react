@@ -3,7 +3,6 @@ import Header from "./components/Header.js";
 
 export default class App extends React.Component {
   render() {
-    // TODO
-    return <Header />;
+    return <Header title="검색" />;
   }
 }
