@@ -8,6 +8,7 @@ export default class App extends React.Component {
 
     this.state = {
       searchKeyword: "",
+      // TODO
     };
   }
 
@@ -41,6 +42,7 @@ export default class App extends React.Component {
             onSubmit={() => this.search(searchKeyword)}
             onReset={() => this.handleReset()}
           />
+          {/* TODO */}
         </div>
       </>
     );
