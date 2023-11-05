@@ -81,7 +81,6 @@
 - `component/tab`: 구현하기 2 - 상속 1
 - `component/inheritance-1`: 구현하기 2 - 상속 2(실습)
 - `component/inheritance-2`: 구현하기 2 - 조합: 컴포넌트 담기 1
-- `component/composition`:
 - `component/composition-1`: 구현하기 2 - 조합: 컴포넌트 담기 2(실습)
 - `component/composition-2`: 구현하기 2 - 조합: 특수화 1
 - `component/composition-3`: 구현하기 2 - 조합: 특수화 2(실습)
