@@ -1,5 +1,5 @@
 import Controller from "./Controller.js";
-import Store from "./store.js";
+import Store from "./Store.js";
 import storage from "./storage.js";
 import SearchFormView from "./views/SearchFormView.js";
 import SearchResultView from "./views/SearchResultView.js";
