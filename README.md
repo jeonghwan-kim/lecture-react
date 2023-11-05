@@ -11,6 +11,14 @@
 - [3편 사용편 1](https://jeonghwan-kim.github.io/series/2021/04/12/lecture-react-usage.html)
 - [4편 사용편 2 (컴포넌트편)](https://jeonghwan-kim.github.io/series/2021/04/15/lecture-react-component.html)
 
+## 폴더 구성
+
+수업 실습을 위한 폴더는 다음과 같이 구성했습니다.
+
+- 1-vanilla: 1편에서 만든 어플리케이션(자바스크립트만 사용)
+- 2-react: 2편에서 다시 만든 어플리케이션(리액트 사용)
+- 3-component: 3편에서 다시 만든 어플리케이션(리액트 컴포넌트 사용)
+
 ## 브랜치
 
 강의 중 실습은 아래 브랜치 중 하나로 이동하여 진행합니다. 브랜치를 이용하면 각 실습에서 풀어야하는 문제를 준비되어 있습니다.
