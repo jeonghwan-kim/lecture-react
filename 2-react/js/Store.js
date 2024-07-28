@@ -34,15 +34,17 @@ class Store {
     const id = createNextId(this.storage.historyData);
     const date = new Date();
     this.storage.historyData.push({ id, keyword, date });
-    this.storage.historyData = this.storage.historyData.sort(this._sortHistory);
+    this.storage.historyData = [
+      ...this.storage.historyData.sort(this._sortHistory),
+    ];
   }
 
   getKeywordList() {
-    return this.storage.keywordData;
+    return [...this.storage.keywordData];
   }
 
   getHistoryList() {
-    return this.storage.historyData.sort(this._sortHistory);
+    return [...this.storage.historyData.sort(this._sortHistory)];
   }
 
   _sortHistory(history1, history2) {
